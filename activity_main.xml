@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.win7.exvideoview.MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txtVideo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" 點選下方按鈕播放影片"
+            android:layout_marginLeft="10dp"
+            android:textSize="30dp"
+            android:textColor="#000000"/>
+        <Button
+            android:id="@+id/btnVideo1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtVideo"
+            android:layout_marginLeft="10dp"
+            android:text="影片一"
+            android:textSize="30dp"
+            android:textColor="#000000"/>
+        <Button
+            android:id="@+id/btnVideo2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtVideo"
+            android:layout_toRightOf="@+id/btnVideo1"
+            android:text="影片二"
+            android:textSize="30dp"
+            android:textColor="#000000"/>
+        <Button
+            android:id="@+id/btnEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtVideo"
+            android:layout_toRightOf="@+id/btnVideo2"
+            android:text="結束"
+            android:textSize="30dp"
+            android:textColor="#000000"/>
+        <VideoView
+            android:id="@+id/vidVideo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/btnVideo1"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"/>
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
